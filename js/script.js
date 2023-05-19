@@ -1,13 +1,29 @@
-// Création de l'élément script pour Materialize
+/**============================================
+ *               IMPORTATION
+ *=============================================**/
+// Materialize
 const materializeScript = document.createElement("script");
 materializeScript.src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
 document.head.appendChild(materializeScript);
 
-// Création de l'élément script pour Font Awesome
+// Font Awesome
 const fontawesomeScript = document.createElement("script");
 fontawesomeScript.src = "https://kit.fontawesome.com/8eca06d6f9.js";
 fontawesomeScript.crossOrigin = "anonymous";
 document.head.appendChild(fontawesomeScript);
+/*=============== END OF IMPORTATION ==============*/
+
+
+/**======================
+ *    SOCIALS
+ *========================**/
+fetch('../Social-Content.html')
+    .then(response => response.text())
+    .then(content => {
+      document.getElementById('socialContent').innerHTML = content;
+    });
+/*==== END OF SOCIALS ====*/
+
 
 /**============================================
  *               BOUTON
