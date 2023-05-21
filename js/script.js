@@ -17,7 +17,7 @@ document.head.appendChild(fontawesomeScript);
 /**======================
  *    SOCIALS
  *========================**/
-fetch(src='../Social-Content.html')
+fetch('../Social-Content.html')
     .then(response => response.text())
     .then(content => {
       document.getElementById('socialContent').innerHTML = content;
