@@ -17,7 +17,13 @@ document.head.appendChild(fontawesomeScript);
 /**======================
  *    SOCIALS
  *========================**/
-fetch('../Social-Content.html')
+// Obtenir l'URL actuelle du document
+const currentURL = window.location.href;
+
+// Construire le chemin relatif en fonction de l'emplacement actuel
+const socialContentURL = new URL('../Social-Content.html', currentURL).href;
+
+fetch(socialContentURL)
     .then(response => response.text())
     .then(content => {
       document.getElementById('socialContent').innerHTML = content;
