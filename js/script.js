@@ -1,3 +1,19 @@
+/**============================================
+ *               IMPORTATION
+ *=============================================**/
+// Materialize
+const materializeScript = document.createElement("script");
+materializeScript.src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js";
+document.head.appendChild(materializeScript);
+
+// Font Awesome
+const fontawesomeScript = document.createElement("script");
+fontawesomeScript.src = "https://kit.fontawesome.com/8eca06d6f9.js";
+fontawesomeScript.crossOrigin = "anonymous";
+document.head.appendChild(fontawesomeScript);
+/*=============== END OF IMPORTATION ==============*/
+
+
 /**======================
  *    SOCIALS
  *========================**/
