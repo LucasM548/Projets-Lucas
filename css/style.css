@@ -90,6 +90,10 @@ h2 {
 	font-family: Arial, sans-serif;
 }
 
+.Paragraph {
+	line-height: 1.5em;
+}
+
 .button p {
 	margin: -20px;
 	padding: 0;
