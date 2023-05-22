@@ -59,6 +59,12 @@ h2 {
 	width: 90vw;
 }
 
+.img {
+	max-width: 160px;
+	max-height: 160px;
+	object-fit: contain;
+}
+
 .button {
 	background-color: rgba(0, 0, 0, 0.6);
 	border: 3px solid #fff;
