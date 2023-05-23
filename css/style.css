@@ -100,7 +100,7 @@ h2 {
 
 .Paragraph {
 	line-height: 1.8em;
-	letter-spacing : 2px;
+	letter-spacing: 2px;
 	background-color: rgba(0, 0, 0, .7)
 }
 
@@ -120,6 +120,8 @@ h2 {
 .buttonEffect {
 	visibility: hidden;
 }
+/*============================ END OF BOUTON ============================*/
+
 
 /**======================
  *    SOCIALS
@@ -130,7 +132,7 @@ h2 {
 	border-radius: 4px;
 	animation: float 3s ease-in-out infinite;
 }
-  
+
 .social-btns .btn:hover {
 	transform: translateY(-10px);
 	animation-play-state: paused;
@@ -138,16 +140,19 @@ h2 {
 
 @keyframes float {
 	0% {
-	  transform: translateY(0px);
+		transform: translateY(0px);
 	}
+
 	50% {
-	  transform: translateY(-8px);
+		transform: translateY(-8px);
 	}
+
 	100% {
-	  transform: translateY(0px);
+		transform: translateY(0px);
 	}
 }
 /*==== END OF SOCIALS ====*/
+
 /*============================ END OF BOUTON ============================*/
 
 

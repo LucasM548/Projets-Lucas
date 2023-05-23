@@ -20,7 +20,7 @@ document.head.appendChild(fontawesomeScript);
 fetch('../Social-Content.html')
     .then(response => response.text())
     .then(content => {
-      document.getElementById('socialContent').innerHTML = content;
+        document.getElementById('socialContent').innerHTML = content;
     });
 /*==== END OF SOCIALS ====*/
 
@@ -28,44 +28,44 @@ fetch('../Social-Content.html')
 /**============================================
  *               BOUTON
  *=============================================**/
-(function ($) {
-  $.fn.textyle = function (options) {
-    var settings = $.extend({
-      duration: 400,
-      delay: 100,
-      easing: "swing",
-      callback: null,
-    }, options);
+(function($) {
+    $.fn.textyle = function(options) {
+        var settings = $.extend({
+            duration: 400,
+            delay: 100,
+            easing: "swing",
+            callback: null,
+        }, options);
 
-    function replaceWithSpans(element) {
-      element.replaceWith(element.text().replace(/(\S)/g, "<span>$1</span>"));
-    }
-
-    return this.each(function () {
-      var container = $(this);
-      var contents = container.contents();
-
-      contents.each(function () {
-        var element = $(this);
-        if (this.nodeType === 3) {
-          replaceWithSpans(element);
+        function replaceWithSpans(element) {
+            element.replaceWith(element.text().replace(/(\S)/g, "<span>$1</span>"));
         }
-      });
 
-      var childrenCount = container.children().length;
-      container.css("opacity", 1);
+        return this.each(function() {
+            var container = $(this);
+            var contents = container.contents();
 
-      for (var i = 0; i < childrenCount; i++) {
-        container.children("span:eq(" + i + ")")
-          .delay(settings.delay * i)
-          .animate({
-            opacity: 1,
-            top: 0,
-            left: 0,
-          }, settings.duration, settings.easing, settings.callback);
-      }
-    });
-  };
+            contents.each(function() {
+                var element = $(this);
+                if (this.nodeType === 3) {
+                    replaceWithSpans(element);
+                }
+            });
+
+            var childrenCount = container.children().length;
+            container.css("opacity", 1);
+
+            for (var i = 0; i < childrenCount; i++) {
+                container.children("span:eq(" + i + ")")
+                    .delay(settings.delay * i)
+                    .animate({
+                        opacity: 1,
+                        top: 0,
+                        left: 0,
+                    }, settings.duration, settings.easing, settings.callback);
+            }
+        });
+    };
 })(jQuery);
 /*=============== END OF BOUTON ==============*/
 
@@ -73,23 +73,23 @@ fetch('../Social-Content.html')
 /**============================================
  *               ANIMATION BOUTON
  *=============================================**/
-$(document).ready(function () {
-  $(".button").animate({
-    opacity: 1,
-  }, 700);
+$(document).ready(function() {
+    $(".button").animate({
+        opacity: 1,
+    }, 700);
 
-  // Effet de typographie sur les boutons
-  $(".buttonEffect").textyle({
-    duration: 200,
-    delay: 10,
-    easing: "swing",
-    callback: function () {
-      $(this).css({
-        visibility: "visible",
-        color: "#fff",
-        transition: "0.05s",
-      });
-    },
-  });
+    // Effet de typographie sur les boutons
+    $(".buttonEffect").textyle({
+        duration: 200,
+        delay: 10,
+        easing: "swing",
+        callback: function() {
+            $(this).css({
+                visibility: "visible",
+                color: "#fff",
+                transition: "0.05s",
+            });
+        },
+    });
 });
 /*=============== END OF ANIMATION BOUTON ==============*/
