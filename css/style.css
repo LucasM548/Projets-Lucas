@@ -1,3 +1,6 @@
+/**============================================
+ *               general
+ *=============================================**/
 body {
 	background-image: url("../img/Wallpaper.avif");
 	background-repeat: repeat;
@@ -28,6 +31,12 @@ h2 {
 	text-align: center;
 }
 
+.container {
+	width: 90vw;
+}
+/*=============== END OF GENERAL ==============*/
+
+
 /**======================
  *    SCROLLBAR
  *========================**/
@@ -55,13 +64,9 @@ h2 {
 /**========================================================================
  *                           BOUTON
  *========================================================================**/
-.container {
-	width: 90vw;
-}
-
 .img {
-	max-width: 160px;
-	max-height: 160px;
+	width: min(40vw, 160px);
+	max-height: min(40vw, 160px);
 	object-fit: contain;
 }
 
