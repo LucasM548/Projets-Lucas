@@ -93,3 +93,14 @@ $(document).ready(function() {
     });
 });
 /*=============== END OF ANIMATION BOUTON ==============*/
+
+
+/**======================
+ *    GOOGLE ANALYTICS
+ *========================**/
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-JDZE4D8YXC');
+/*==== END OF GOOGLE ANALYTICS ====*/
